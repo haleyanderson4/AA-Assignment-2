@@ -346,13 +346,13 @@ public class Main
   }
 
 
-  public static int whichHasLeast(int r, int c)
+  public static int whichHasLeast(int row, int column)
   {
     int leastOpenNeighbors = 10;
 
-    if(onBoardAndOpen(r, c)) //will check each posible stop to see if valid & # of open neighbors
+    if(onBoardAndOpen(row, column)) //will check each posible stop to see if valid & # of open neighbors
     {
-      int num = possibleNextSteps(r, c);
+      int num = possibleNextSteps(row, column);
       if(num < leastOpenNeighbors)
       {
         leastOpenNeighbors = num;
